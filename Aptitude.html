@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('label').click(function () {
+                $('label').removeClass('worngans');
+                $(this).addClass('worngans');
+            });
+        });
+
+    </script>
+    <style>
+        input[type='radio'] {
+            display: none;
+        }
+
+        input[type='radio']+label {
+            display: inline-block;
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        input[type='radio']+label:hover {
+            border: 1px solid #000000;
+        }
+
+        input[type='radio']:checked+label {
+            background-image: none;
+            background-color: #0c0;
+            color: #fff;
+            border: 1px solid #0c0 !important;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .worngans {
+            background-color: #F36;
+            color: #fff;
+            border: 1px solid #F36 !important;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="scp-quizzes-main">
+        <div class="scp-quizzes-data">
+            <h3>1. What is the output of the below c code?</h3>
+            Rs.5887 is divided between Shyam and Ram, such that Shyam's share at the end of 9 years is
+            equal to Ram's share at the end of 11 years, compounded annually at the rate of 5%. Find the
+            share of Shyam?
+            <br>
+            <br>
+            <input type="radio" name="question1">
+            <label>2000</label><br />
+            <input type="radio" name="question1">
+            <label>None</label><br />
+            <input type="radio" name="question1">
+            <label>2088</label> <br />
+            <input type="radio" id="3087" name="question1">
+            <label for="3087">3087</label>
+            <a href="https://questions.ascenteducation.com/iim_cat_mba_free_sample_questions_math_quant/simple_compound_interest/compound_interest_10.shtml#:~:text=Rs.,Find%20the%20share%20of%20Shyam.&text=Therefore%20Shyam's%20share%20%3D%20(441%2F,841)%20*%205887%20%3D%203087." target="_blank">Source link</a>
+            
+        </div>
+
+</body>
+
+</html>
